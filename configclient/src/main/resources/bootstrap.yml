@@ -1,4 +1,14 @@
 spring:
   application:
-    name: configclientdemo
+    name: client-demo
+  cloud:
+    config:
+      uri: http://localhost:7770
+      profile: dev
+
+  rabbitmq:
+    host: 118.89.245.226
+    username: admin
+    password: 123456
+    port: 15672
 

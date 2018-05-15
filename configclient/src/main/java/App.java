@@ -1,3 +1,4 @@
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Configuration;
@@ -12,12 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 @RestController
 public class App {
-//    @Value("${config.name}")
-//    String name = "World";
+    @Value("${test}")
+    String name = "World";
 
     @RequestMapping("/")
     public String home() {
-        return "Hello ";
+        return "Hello " + name;
     }
 
     public static void main(String[] args) {

@@ -6,8 +6,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/JiangGuangxing/config-repo.git
-#          basedir: target/config
+          uri: https://github.com/JiangGuangxing/config-repo
+          searchPaths: config
   rabbitmq:
     host: 118.89.245.226
     username: admin

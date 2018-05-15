@@ -11,7 +11,8 @@ import org.springframework.context.annotation.Configuration;
 @EnableDiscoveryClient
 @EnableConfigServer
 /**
- * configserverdemo
+ * @author 姜广兴
+ * @date 2018-05-14
  */
 public class ConfigServerApplication {
     public static void main(String[] args) {

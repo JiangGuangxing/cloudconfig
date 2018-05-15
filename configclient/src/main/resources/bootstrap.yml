@@ -5,7 +5,7 @@ spring:
     config:
       uri: http://localhost:7770
       #profile: dev 暂时不用，权限不好区分
-      #用lable区分不同分支，git可以分配给开发人员test分支权限，方便调试，label的值可以通过maven任务在打包时更改成对应环境的分支
+      #用lable区分不同分支，默认是master，可以分配给开发人员test分支权限，方便调试，label的值可以通过maven任务在打包时更改成对应环境的分支
       label: test
 
   rabbitmq:

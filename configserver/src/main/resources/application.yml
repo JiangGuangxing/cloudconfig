@@ -9,7 +9,7 @@ spring:
           uri: https://github.com/JiangGuangxing/config-repo
           searchPaths: config
   rabbitmq:
-    host: 118.89.245.226
+    host: localhost
     username: admin
     password: 123456
     port: 15672

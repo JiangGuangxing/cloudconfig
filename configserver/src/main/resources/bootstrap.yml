@@ -7,7 +7,9 @@ spring:
       server:
         git:
           uri: https://github.com/JiangGuangxing/config-repo  #可以在github或者gitlab项目中设置webhooks，地址设置成http://config-server域名/bus/refresh，有配置更新push后会自动更新所有客户端的配置值
-          searchPaths: config
+          #试用占位符，每个项目的配置文件放在不同文件夹，方便管理
+          searchPaths: '{application}'
+
   rabbitmq:
     host: localhost
     username: admin

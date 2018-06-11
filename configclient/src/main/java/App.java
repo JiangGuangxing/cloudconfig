@@ -17,10 +17,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class App {
     @Value("${test}")
     private String name;
+    @Value("${test2}")
+    private String name2;
 
     @RequestMapping("/")
     public String home() {
-        return "hello " + name;
+        return "hello " + name + "-" + name2;
     }
 
     public static void main(String[] args) {
